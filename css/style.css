@@ -13,6 +13,10 @@ body {
     justify-content: center;
 }
 
+.produkt {
+    margin-top: 40%;
+}
+
 #produkter img {
     width: 100%;
 }
