@@ -40,6 +40,24 @@ body {
 #produkter img {
     width: 100%;
 }
+
+.img-card {
+    position: relative;
+}
+
+.img-card .img-top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.img-card:hover .img-top {
+    display: inline;
+    background-color: white;
+}
+
 .grid-produkter {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
