@@ -4,6 +4,22 @@ body {
     overflow-x: hidden;
 }
 
+.carousel-control.left  {
+    background-image: none;
+    background-repeat: no-repeat;
+}
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control {
+    color: gray;
+}
+
+.carousel-control:hover {
+    color: black;
+}
+
 .produkt, #produkter {
     display: grid;
 }
@@ -60,11 +76,7 @@ body {
 
 footer {
     width: 100%;
-    display: inline-flex;
     background-color: #f3efe7;
-    padding-top: 50px;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 footer p, footer a {
@@ -76,26 +88,16 @@ footer li {
     list-style-type: none;
 }
 
-footer ul, #footer-socials {
-}
-
 .submit {
     width: 52.2%;
     background-color: lightgreen;
 }
 
-.carousel-control.left  {
-    background-image: none;
-    background-repeat: no-repeat;
-}
-.carousel-control.right {
-    background-image: none;
-}
-
-.carousel-control {
-    color: gray;
-}
-
-.carousel-control:hover {
-    color: black;
+#footer-content {
+    margin: 0 10%;
+    display: inline-flex;
+    width: 80%;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
