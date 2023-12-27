@@ -20,6 +20,10 @@ body {
     color: black;
 }
 
+.carousel-control:focus {
+    color: black;
+}
+
 .produkt, #produkter {
     display: grid;
 }
