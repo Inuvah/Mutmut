@@ -8,13 +8,18 @@ body {
     display: grid;
 }
 #produkter {
+    width: 70%;
+    margin: 5% 15%;
+    justify-content: center;
+}
+
+#produkter img {
     width: 100%;
 }
 .grid-produkter {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     column-gap: 10px;
-    
 }
 
 .produkt p, .produkt h2 {
@@ -23,4 +28,70 @@ body {
 
 .produkt h2 {
     font-size: large;
+}
+
+@media screen and (max-width:800px) {
+    .grid-produkter {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .grid-produkter {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .grid-produkter {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10px;
+    }
+}
+
+footer {
+    width: 100%;
+    display: inline-flex;
+    background-color: #f3efe7;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer p, footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer ul, #footer-socials {
+}
+
+.submit {
+    width: 52.2%;
+    background-color: lightgreen;
+}
+
+.carousel-control.left  {
+    background-image: none;
+    background-repeat: no-repeat;
+}
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control {
+    color: gray;
+}
+
+.carousel-control:hover {
+    color: black;
 }
