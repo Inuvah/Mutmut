@@ -8,16 +8,63 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
+  <div id="price-info">
+    <ul>
+      <li id="first-top"><p>Levering: 2-4 hverdage</p></li>
+      <li><p>Gratis levering fra kr.499,-</p></li>
+      <li><p>14 dages fortrydelsesret</p></li>
+    </ul>
+  </div>
+
     <nav>
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <a href="#">Link3</a>
-        <a href="#">Link4</a>
+      <div>
+        <a href="#" class="nav-plakater nav-link" onclick="dropFunctionOne()">Plakater</a>
+        <div class="dropdown-one dropdown-link" id="dropdown">
+          <li><a href="#">Plakater</a></li>
+          <li><a href="#">Små Plakater</a></li>
+          <li><a href="#">Kort</a></li>
+          <li><a href="#">Julekort</a></li>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="nav-tekstil nav-link" onclick="dropFunctionTwo()">Tekstil</a>
+        <div class="dropdown-two dropdown-link" id="dropdown-two">
+          <li><a href="#">T-shirts</a></li>
+          <li><a href="#">Muleposer</a></li>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="nav-køkken nav-link" onclick="dropFunctionThree()">Køkken</a>
+        <div class="dropdown-three dropdown-link" id="dropdown-three">
+          <li><a href="#">Krus</a></li>
+          <li><a href="#">Magneter</a></li>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="nav-leg nav-link" onclick="dropFunctionFour()">Leg</a>
+        <div class="dropdown-four dropdown-link" id="dropdown-four">
+          <li><a href="#">Vendespil</a></li>
+          <li><a href="#">Malebog</a></li>
+        </div>
+      </div>
+      <div id="nav-icons">
+        <a href="#"><img src="img/Search.png" alt=""></a>
+        <a href="#"><img src="img/cart.png" alt=""></a>
+      </div>
     </nav>
+
+    <div id="logo-link">
+      <h1><a href="#">mutmut.dk</a></h1>
+    </div>
+
 </header>
 
 <div class="container"> 
@@ -56,26 +103,38 @@
   </div>
 </div>
 
-<section id="produkter">
+<div style="width: 100%;">
+  <div style="width: 80%; text-align: center; margin:50px 10%;">
     <h1 style="text-align: center;">VELKOMMEN HOS MUTMUT</h1>
-    <p style="text-align: center; font-size: larger; font-weight: 400;">Vi ælske æ sproch! Mutmut er en hyldest til den sønderjyske dialekt. Her på siden og hos vores skønne forhandlere kan du købe Mutmuts sjove og farverige plakater, kort og accessories med sønderjyske ord og udtryk. Brug den sønderjyske dialekt, og få den til at leve på nye måder. </p>
-    
+    <p style="text-align: center; font-size: medium; font-weight: bold;">Vi ælske æ sproch! Mutmut er en hyldest til den sønderjyske dialekt. 
+      Her på siden og hos vores skønne forhandlere kan du købe Mutmuts sjove og farverige plakater, kort og accessories med sønderjyske ord 
+      og udtryk. Brug den sønderjyske dialekt, og få den til at leve på nye måder. <a href="omos.html" style="color: #006380;">Læs mere her.</a></p>
+  </div>
+</div>
+
+<section id="produkter">
     <div class="grid-produkter">
         <div class="produkt">
             <div class="img-card">
               <img src="img/produkter/4majbefrielse.w293.h293.fill.webp" alt="4. maj">
               <img src="img/produkter/Hover/4maj.w293.h293.fill.webp" alt="hover" class="img-top">
             </div>
-            <h2>HAUS LYS I A VINNE 4 MAJ</h2>
-            <p>198</p>
-            <p>Kampen for frihed og fred er stadig akteul. Nyt plakatmotiv fra Mutmut. 30x40</p>
+            <div class="produkt-text">
+              <h2>HAUS LYS I A VINNE 4 MAJ</h2>
+              <p>198</p>
+              <p>Kampen for frihed og fred er stadig akteul. Nyt plakatmotiv fra Mutmut. 30x40</p>
+            </div>
             <p>149,00 DKK</p>
             <div class="order">
                 <div class="amount">
-
+                  <form action="submit" class="amount-form">
+                    <input type="text" name="amount" value="1" class="amount-input">
+                  </form>
                 </div>
                 <div class="buy">
-
+                  <form action="submit" class="buy-form">
+                    <input type="button" value="Køb" class="buy-input">
+                  </form>
                 </div>
             </div>
         </div>
@@ -86,34 +145,46 @@
               <img src="" alt="hover" class="img-top">
             </div>
             
-            <h2>MOJN MED LAVENDEL & GULD</h2>
-            <p>169</p>
-            <p>Super-feminin plakat i den smukkeste lavendel-farve med guldtryk. 30 x 40 cm. Førpris 149 kr.</p>
+            <div class="produkt-text">
+              <h2>MOJN MED LAVENDEL & GULD</h2>
+              <p>169</p>
+              <p>Super-feminin plakat i den smukkeste lavendel-farve med guldtryk. 30 x 40 cm. Førpris 149 kr.</p>
+            </div>
             <p>149,00 DKK</p>
             <div class="order">
-                <div class="amount">
-
-                </div>
-                <div class="buy">
-
-                </div>
-            </div>
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
         </div>
 
         <div class="produkt">
             <img src="img/produkter/mojnrikkethomsen.w293.h293.fill.webp" alt="Kommer og går">
-            <h2>MOJN NÅR VI KOMME - PLAKAT I SORT/GUL</h2>
-            <p>160</p>
-            <p>Mojn. Sådan lyder goddag og farvel i Sønderjylland</p>
+            <div class="produkt-text">
+              <h2>MOJN NÅR VI KOMME - PLAKAT I SORT/GUL</h2>
+              <p>160</p>
+              <p>Mojn. Sådan lyder goddag og farvel i Sønderjylland</p>
+            </div>
             <p>99,00 DKK</p>
             <div class="order">
-                <div class="amount">
-
-                </div>
-                <div class="buy">
-
-                </div>
-            </div>
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
         </div>
 
         <div class="produkt">
@@ -122,18 +193,24 @@
               <img src="img/produkter/Hover/sproch30x40.w293.h293.fill.webp" alt="hover" class="img-top">
             </div>
           
-            <h2>Æ SPROCH BLÅ PLAKAT</h2>
-            <p>154</p>
-            <p>Få styr på de fantastiske sønderjyske gloser med denne plakat i farverigt grafisk design. </p>
+            <div class="produkt-text">
+              <h2>Æ SPROCH BLÅ PLAKAT</h2>
+              <p>154</p>
+              <p>Få styr på de fantastiske sønderjyske gloser med denne plakat i farverigt grafisk design. </p>
+            </div>
             <p>149,00 DKK</p>
             <div class="order">
-                <div class="amount">
-
-                </div>
-                <div class="buy">
-
-                </div>
-            </div>
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
         </div>
 
         <div class="produkt">
@@ -141,18 +218,24 @@
               <img src="img/produkter/sprochlillasnderjyskdialektplakatframutmutsynnejyskdesign50x70.w293.h293.fill.webp" alt="sprog plakat 50x70">
               <img src="img/produkter/Hover/sproch50x70nye4.w293.h293.fill.webp" alt="hover" class="img-top">
             </div>
-            <h2>Æ SPROCH - PLAKAT LYSERØD</h2>
-            <p>212</p>
-            <p>Har du styr på æ sproch? Få de fantastiske sønderjyske gloser på plads med denne plakat i farverigt grafisk design. 50x70 cm. </p>
+            <div class="produkt-text">
+              <h2>Æ SPROCH - PLAKAT LYSERØD</h2>
+              <p>212</p>
+              <p>Har du styr på æ sproch? Få de fantastiske sønderjyske gloser på plads med denne plakat i farverigt grafisk design. 50x70 cm. </p>
+            </div>
             <p>249,00 DKK</p>
             <div class="order">
-                <div class="amount">
-
-                </div>
-                <div class="buy">
-
-                </div>
-            </div>
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
         </div>
 
         <div class="produkt">
@@ -160,18 +243,24 @@
               <img src="img/produkter/synnejylland1.w293.h293.fill.webp" alt="sprog plakat synnejylland">
               <img src="img/produkter/Hover/snderjyllandaugust202130x40.w293.h293.fill.webp" alt="hover" class="img-top">
             </div>
-            <h2>SYNNEJYLLAND - BLÅ</h2>
-            <p>200 30x40</p>
-            <p>Skøn ny plakat fra Mutmut med hyldest til med alt det bedste fra Sønderjylland.  30x40.Flere størrelser.</p>
+            <div class="produkt-text">
+              <h2>SYNNEJYLLAND - BLÅ</h2>
+              <p>200 30x40</p>
+              <p>Skøn ny plakat fra Mutmut med hyldest til med alt det bedste fra Sønderjylland.  30x40.Flere størrelser.</p>
+            </div>
             <p>149,00 DKK</p>
             <div class="order">
-                <div class="amount">
-
-                </div>
-                <div class="buy">
-
-                </div>
-            </div>
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
         </div>
 
         <div class="produkt">
@@ -179,18 +268,24 @@
               <img src="img/produkter/tourdefrance.w293.h293.fill.webp" alt="sprog plakat 3x40">
               <img src="img/produkter/Hover/tourdefrance2.w293.h293.fill.webp" alt="hover" class="img-top">
             </div>
-            <h2>Æ TOUR I SYNNEJYLLAND</h2>
-            <p>198</p>
-            <p>Nyt plakatmotiv med en sønderjysk Tour de France-parlør 30x40</p>
+            <div class="produkt-text">
+              <h2>Æ TOUR I SYNNEJYLLAND</h2>
+              <p>198</p>
+              <p>Nyt plakatmotiv med en sønderjysk Tour de France-parlør 30x40</p>
+            </div>
             <p>149,00 DKK</p>
             <div class="order">
-                <div class="amount">
-
-                </div>
-                <div class="buy">
-
-                </div>
-            </div>
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
         </div>
 
         <div class="produkt">
@@ -198,16 +293,22 @@
               <img src="img/produkter/synnejylland2.w293.h293.fill.webp" alt="sprog plakat 3x40">
               <img src="img/produkter/Hover/snderjyllandaugust202130x402.w293.h293.fill.webp" alt="hover" class="img-top">
             </div>
-            <h2>DET BEDSTE FRA SYNNEJYLLAND-GRÅ</h2>
-            <p>201 50x70</p>
-            <p>Skøn ny plakat fra Mutmut med hyldest til med alt det bedste fra Sønderjylland. 50x70. Flere størrelser.</p>
+            <div class="produkt-text">
+              <h2>DET BEDSTE FRA SYNNEJYLLAND-GRÅ</h2>
+              <p>201 50x70</p>
+              <p>Skøn ny plakat fra Mutmut med hyldest til med alt det bedste fra Sønderjylland. 50x70. Flere størrelser.</p>
+            </div>
             <p>149,00 DKK</p>
             <div class="order">
                 <div class="amount">
-
+                  <form action="submit" class="amount-form">
+                    <input type="text" name="amount" value="1" class="amount-input">
+                  </form>
                 </div>
                 <div class="buy">
-
+                  <form action="submit" class="buy-form">
+                    <input type="button" value="Køb" class="buy-input">
+                  </form>
                 </div>
             </div>
         </div>
@@ -264,7 +365,7 @@
       <li><a href="">
         Kontakt
       </a></li>
-      <li><a href="">
+      <li><a href="omos.html">
         Om Mutmut
       </a></li>
     </ul>
@@ -275,21 +376,21 @@
         <h3>Social media</h3>
       </li>
       <li>
-        <img src="" alt="">
-        <img src="" alt="">
+        <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
       </li>
     </ul>
   </div>
   <div id="footer-newsLetter">
     <ul>
-     <li><p>
-      Nyheds brev
-     </p></li>
+     <li><h3>
+      Nyheds tilmelding
+     </h3></li>
      <li>
-      <form type="text" name="Navn">
-        <input type="text">
-        <input type="text">
-        <input type="button" class="submit">
+      <form type="submit" name="Navn">
+        <input type="text" value="Navn" class="forms"><br>
+        <input type="text" value="E-mail" class="forms"><br><br>
+        <input type="button" value="Godkend" class="godkend">
       </form>
      </li>
     </ul>
