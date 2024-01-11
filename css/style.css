@@ -106,7 +106,7 @@ nav {
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
-    color: #3d9ca8;
+    color: #006380;
     transition: 0.1s;
     background-color: transparent;
 }
@@ -117,7 +117,7 @@ nav {
 
 #logo-link a:hover {
     text-decoration: none;
-    color: #006380;
+    color: #3d9ca8;
 }
 
 /*header end*/
@@ -362,6 +362,7 @@ footer li {
     padding-bottom: 1px;
     justify-content: space-between;
     border-bottom: 1px solid #eee;
+    color: #006380;
 }
 
 .produktDetails h1 {
@@ -383,7 +384,6 @@ footer li {
 .grid-produkter2 img {
     width: 100%;
 }
-
 /*end*/
 
 /*Om os*/
