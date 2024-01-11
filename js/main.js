@@ -1,3 +1,4 @@
+//nav display:none toggle for dropdowns on nav by applying class show with display:block
 function dropFunctionOne() {
     document.getElementById("dropdown").classList.toggle("show");
 }
@@ -14,6 +15,7 @@ function dropFunctionFour() {
     document.getElementById("dropdown-four").classList.toggle("show");
 }
 
+//Checks if you click outside the visible dropdown and if so closes it
 window.onclick = function(event) {
     if (!event.target.matches('.nav-plakater')) {
       var dropdowns = document.getElementsByClassName("dropdown-one");
@@ -57,7 +59,9 @@ window.onclick = function(event) {
       }
   }
 
-
+//omos opacity scroll effect on text starting at -1 = 0 and moves 
+//towards one at a set amount of pixels scrolled
+  
   window.addEventListener("scroll", function () {
     let header = document.getElementById("opacity");
     let header2 = document.getElementById("opacity2");

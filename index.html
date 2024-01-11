@@ -16,6 +16,7 @@
 <body>
 
 <header>
+  <!--Delivery info-->
   <div id="price-info">
     <ul>
       <li id="first-top"><p>Levering: 2-4 hverdage</p></li>
@@ -23,7 +24,7 @@
       <li><p>14 dages fortrydelsesret</p></li>
     </ul>
   </div>
-
+  <!--top navigation-->
     <nav>
       <div>
         <a href="#" class="nav-plakater nav-link" onclick="dropFunctionOne()">Plakater</a>
@@ -56,17 +57,18 @@
         </div>
       </div>
       <div id="nav-icons">
-        <a href="#"><img src="img/Search.png" alt=""></a>
-        <a href="#"><img src="img/cart.png" alt=""></a>
+        <a href="#"><img src="img/magnifying-glass-solid.svg" alt=""></a>
+        <a href="#"><img src="img/cart-shopping-solid.svg" alt=""></a>
       </div>
     </nav>
-
+    <!--nav end-->
+    <!--logo because actual logo is bad for web...-->
     <div id="logo-link">
-      <h1><a href="#">mutmut.dk</a></h1>
+      <h1><a href="index.html">mutmut.dk</a></h1>
     </div>
 
 </header>
-
+<!--Carousel-->
 <div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -79,15 +81,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/Slider-juni-2020255-1.w1240.h440.fill.webp" alt="Los Angeles" style="width:100%;">
+        <img src="img/Sliders-2023-2.w1240.h440.fill.webp" alt="galt glant" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="img/Slider-nov3-1.w1240.h440.fill.webp" alt="Chicago" style="width:100%;">
+        <img src="img/rabat.png" alt="rabat" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="img/Sliders-2023-2.w1240.h440.fill.webp" alt="New york" style="width:100%;">
+        <img src="img/frontcover-ehmm.png" alt="" style="width:100%;">
       </div>
     </div>
 
@@ -103,6 +105,7 @@
   </div>
 </div>
 
+<!--Introduction to mutmut-->
 <div style="width: 100%;">
   <div style="width: 80%; text-align: center; margin:50px 10%;">
     <h1 style="text-align: center;">VELKOMMEN HOS MUTMUT</h1>
@@ -112,17 +115,24 @@
   </div>
 </div>
 
+<!--Products in a 4x2 grid-->
 <section id="produkter">
     <div class="grid-produkter">
         <div class="produkt">
-            <div class="img-card">
-              <img src="img/produkter/4majbefrielse.w293.h293.fill.webp" alt="4. maj">
-              <img src="img/produkter/Hover/4maj.w293.h293.fill.webp" alt="hover" class="img-top">
+            <div class="img-card img-bright">
+              <a href="produktsider/kaffprodukt.html">
+                <img src="img/plakater/kaffkaff.png" alt="4. maj">
+                <img src="img/plakater/Hover/IMG_0087.png" alt="hover" class="img-top">
+              </a>
+              
             </div>
             <div class="produkt-text">
-              <h2>HAUS LYS I A VINNE 4 MAJ</h2>
+              <h2>KAFF KAFF</h2>
               <p>198</p>
-              <p>Kampen for frihed og fred er stadig akteul. Nyt plakatmotiv fra Mutmut. 30x40</p>
+              <p>
+                Kaff den ultimative boost. Nyt plakatmotiv fra Mutmut. Hygge collection passer 
+                godt sammen. 30x40
+              </p>
             </div>
             <p>149,00 DKK</p>
             <div class="order">
@@ -133,22 +143,26 @@
                 </div>
                 <div class="buy">
                   <form action="submit" class="buy-form">
-                    <input type="button" value="Køb" class="buy-input">
+                    <a href="produktsider/kaffprodukt.html">
+                      <input type="button" value="Køb" class="buy-input">
+                    </a>
                   </form>
                 </div>
             </div>
         </div>
 
         <div class="produkt">
-            <div class="img-card">
-              <img src="img/produkter/lavendelguld_117378159.w293.h293.fill.webp" alt="4. maj">
-              <img src="" alt="hover" class="img-top">
+            <div class="img-card img-bright">
+              <a href="produktsider/kach.html">
+                <img src="img/plakater/kach.png" alt="4. maj">
+                <img src="img/plakater/Hover/kach.png" alt="hover" class="img-top">
+              </a>
             </div>
             
             <div class="produkt-text">
-              <h2>MOJN MED LAVENDEL & GULD</h2>
+              <h2>Kach - Mmmm</h2>
               <p>169</p>
-              <p>Super-feminin plakat i den smukkeste lavendel-farve med guldtryk. 30 x 40 cm. Førpris 149 kr.</p>
+              <p>En lækker kach til dem med en sød tand. Hygge collection passer godt sammen. 50 x 70 cm.</p>
             </div>
             <p>149,00 DKK</p>
             <div class="order">
@@ -159,18 +173,26 @@
               </div>
               <div class="buy">
                 <form action="submit" class="buy-form">
-                  <input type="button" value="Køb" class="buy-input">
+                  <a href="produktsider/kach.html">
+                    <input type="button" value="Køb" class="buy-input">
+                  </a>
                 </form>
               </div>
           </div>
         </div>
 
         <div class="produkt">
-            <img src="img/produkter/mojnrikkethomsen.w293.h293.fill.webp" alt="Kommer og går">
+          <div class="img-card img-bright">
+            <a href="produktsider/smaakager.html">
+              <img src="img/plakater/Småkager.png" alt="Kommer og går">
+              <img src="img/plakater/Hover/Smakage_plakat.png" alt="hover" class="img-top">
+            </a>
+          </div>
+            
             <div class="produkt-text">
-              <h2>MOJN NÅR VI KOMME - PLAKAT I SORT/GUL</h2>
+              <h2>Små Kach</h2>
               <p>160</p>
-              <p>Mojn. Sådan lyder goddag og farvel i Sønderjylland</p>
+              <p>Simpelt motiv med små danske kager. Hygge collection passer godt sammen. 30 x 40 cm</p>
             </div>
             <p>99,00 DKK</p>
             <div class="order">
@@ -181,7 +203,9 @@
               </div>
               <div class="buy">
                 <form action="submit" class="buy-form">
-                  <input type="button" value="Køb" class="buy-input">
+                  <a href="">
+                    <input type="button" value="Køb" class="buy-input">
+                  </a>
                 </form>
               </div>
           </div>
@@ -196,7 +220,7 @@
             <div class="produkt-text">
               <h2>Æ SPROCH BLÅ PLAKAT</h2>
               <p>154</p>
-              <p>Få styr på de fantastiske sønderjyske gloser med denne plakat i farverigt grafisk design. </p>
+              <p>Få styr på de fantastiske sønderjyske gloser med denne plakat i farverigt grafisk design.  </p>
             </div>
             <p>149,00 DKK</p>
             <div class="order">
@@ -214,14 +238,16 @@
         </div>
 
         <div class="produkt">
-            <div class="img-card">
-              <img src="img/produkter/sprochlillasnderjyskdialektplakatframutmutsynnejyskdesign50x70.w293.h293.fill.webp" alt="sprog plakat 50x70">
-              <img src="img/produkter/Hover/sproch50x70nye4.w293.h293.fill.webp" alt="hover" class="img-top">
+            <div class="img-card img-bright">
+              <a href="produktsider/blomstervaseprodukt.html">
+                <img src="img/plakater/blomstervaser.png" alt="sprog plakat 50x70">
+                <img src="img/plakater/Hover/blomstervaser.png" alt="hover" class="img-top">
+              </a>
             </div>
             <div class="produkt-text">
-              <h2>Æ SPROCH - PLAKAT LYSERØD</h2>
+              <h2>Blomster Vaser</h2>
               <p>212</p>
-              <p>Har du styr på æ sproch? Få de fantastiske sønderjyske gloser på plads med denne plakat i farverigt grafisk design. 50x70 cm. </p>
+              <p>Fine decorative blomster. Galt Glant daw collection som passer godt sammen. 50x70 cm. </p>
             </div>
             <p>249,00 DKK</p>
             <div class="order">
@@ -232,21 +258,24 @@
               </div>
               <div class="buy">
                 <form action="submit" class="buy-form">
-                  <input type="button" value="Køb" class="buy-input">
+                  <a href="produktsider/blomstervaseprodukt.html">
+                    <input type="button" value="Køb" class="buy-input">
+                  </a>
                 </form>
               </div>
           </div>
         </div>
 
         <div class="produkt">
-            <div class="img-card">
-              <img src="img/produkter/synnejylland1.w293.h293.fill.webp" alt="sprog plakat synnejylland">
-              <img src="img/produkter/Hover/snderjyllandaugust202130x40.w293.h293.fill.webp" alt="hover" class="img-top">
+            <div class="img-card img-bright">
+              <a href="produktsider/galtglantprodukt.html"></a>
+              <img src="img/plakater/galglant.png" alt="sprog plakat synnejylland">
+              <img src="img/plakater/Hover/galtglant.png" alt="hover" class="img-top">
             </div>
             <div class="produkt-text">
-              <h2>SYNNEJYLLAND - BLÅ</h2>
+              <h2>Blomster</h2>
               <p>200 30x40</p>
-              <p>Skøn ny plakat fra Mutmut med hyldest til med alt det bedste fra Sønderjylland.  30x40.Flere størrelser.</p>
+              <p>Med fine blomster er det altid en galt glant daw. Galt Glant daw collection som passer godt sammen.  30x40.Flere størrelser.</p>
             </div>
             <p>149,00 DKK</p>
             <div class="order">
@@ -257,21 +286,25 @@
               </div>
               <div class="buy">
                 <form action="submit" class="buy-form">
-                  <input type="button" value="Køb" class="buy-input">
+                  <a href="produktsider/galtglantprodukt.html">
+                    <input type="button" value="Køb" class="buy-input">
+                  </a>
                 </form>
               </div>
           </div>
         </div>
 
         <div class="produkt">
-            <div class="img-card">
-              <img src="img/produkter/tourdefrance.w293.h293.fill.webp" alt="sprog plakat 3x40">
-              <img src="img/produkter/Hover/tourdefrance2.w293.h293.fill.webp" alt="hover" class="img-top">
+            <div class="img-card img-bright">
+              <a href="produktsider/mølleprodukt.html">
+                <img src="img/plakater/Mølle.png" alt="sprog plakat 3x40">
+                <img src="img/plakater/Hover/mølle.png" alt="hover" class="img-top">
+              </a>
             </div>
             <div class="produkt-text">
-              <h2>Æ TOUR I SYNNEJYLLAND</h2>
+              <h2>Synnejylland - Mølle</h2>
               <p>198</p>
-              <p>Nyt plakatmotiv med en sønderjysk Tour de France-parlør 30x40</p>
+              <p>Mølle og gård i den danske natur. Galt Glant daw collection som passer godt sammen. 30x40 cm</p>
             </div>
             <p>149,00 DKK</p>
             <div class="order">
@@ -282,7 +315,9 @@
               </div>
               <div class="buy">
                 <form action="submit" class="buy-form">
-                  <input type="button" value="Køb" class="buy-input">
+                  <a href="produktsider/mølleprodukt.html">
+                    <input type="button" value="Køb" class="buy-input">
+                  </a>
                 </form>
               </div>
           </div>
@@ -316,6 +351,7 @@
     </div>
 </section>
 
+<!--Informational footer-->
 <footer>
   <div id="footer-content">
   <div id="footer-info">
@@ -377,7 +413,7 @@
       </li>
       <li>
         <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+        <a href="https://www.instagram.com/mutmutterne" target="_blank"><img src="img/instagram.svg" alt="instagram"></a>
       </li>
     </ul>
   </div>
@@ -397,5 +433,18 @@
   </div>
   </div>
 </footer>
+
+<div id="logo-bottom">
+  <style>
+    #logo-bottom {
+      display: flex;
+      justify-content: center;
+      margin: 3% 0;
+    }
+  </style>
+  <a href="index.html">
+    <img src="img/Mutmut logo 102x102.png" alt="logo">
+  </a>
+</div>
 </body>
 </html>

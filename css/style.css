@@ -4,6 +4,7 @@ body {
     overflow-x: hidden;
 }
 
+/*Globals*/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: "Lato", sans-serif;
 }
@@ -12,7 +13,9 @@ p {
     font-family: Tahoma,sans-serif;
     font-weight: 500;
 }
+/*globals*/
 
+/*header*/
 #price-info {
     display: flex;
     width: 100%;
@@ -54,9 +57,9 @@ nav {
 }
 
 #nav-icons img {
-    width: 30%;
-    margin: 0% 5%;
-    margin-top: 6%;
+    width: 38%;
+    margin: 0% 3%;
+    margin-top: 25%;
 }
 
 .dropdown-link a {
@@ -117,6 +120,9 @@ nav {
     color: #006380;
 }
 
+/*header end*/
+
+/*Carousel*/ 
 .carousel-control.left  {
     background-image: none;
     background-repeat: no-repeat;
@@ -137,6 +143,9 @@ nav {
     color: black;
 }
 
+/*Carousel end*/
+
+/*Product grid*/
 .produkt, #produkter {
     display: grid;
 }
@@ -180,6 +189,10 @@ nav {
     position: relative;
 }
 
+.img-bright {
+    filter: brightness(140%);
+}
+
 .img-card .img-top {
     display: none;
     position: absolute;
@@ -199,19 +212,18 @@ nav {
     column-gap: 5%;
 }
 
+.order {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
 .produkt p, .produkt h2 {
     text-align: center;
 }
 
 .produkt h2 {
     font-size: large;
-}
-
-.order {
-    margin-top: 2%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .amount {
@@ -266,7 +278,9 @@ nav {
         column-gap: 10px;
     }
 }
+/*product grid end*/
 
+/*Footer*/
 footer {
     width: 100%;
     background-color: #f3efe7;
@@ -306,6 +320,7 @@ footer li {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/*Footer end*/
 
 /*Product page*/
 
@@ -353,6 +368,22 @@ footer li {
     font-size: x-large;
 }
 
+#produkter2 {
+    display: grid;
+    width: 60%;
+    margin: 5% 20%;
+}
+
+.grid-produkter2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+}
+
+.grid-produkter2 img {
+    width: 100%;
+}
+
 /*end*/
 
 /*Om os*/
@@ -364,37 +395,28 @@ footer li {
     background-repeat: no-repeat;
     background-size: 80%;
   }
-
 .parallax-one {
     background-image: url('../img/mojnmojn.jpg');
 }
-
 .parallax-two {
     background-image: url('../img/parallaxtwo.jpg');
     background-size: cover;
 }
-
 .parallax-three {
     background-image: url('../img/parallaxthree.jpg');
 }
-
 .parallax-four {
     background-image: url('../img/parallaxfour.jpg');
     background-size: cover;
 }
-
 .parallax-five {
     background-image: url('../img/lastmojn.jpg');
     background-size: cover;
 }
-
-
-
 .foreground {
     height: 300px;
     background-color: #006380;
 }
-
 .foreground h1, .foreground h2 {
     color: white;
     text-align: center;
@@ -402,15 +424,14 @@ footer li {
     padding: 5% 0;
     opacity: 1;
 }
-
 .foreground-four, .foreground-one {
     height: auto;
     padding-bottom: 25px;
 }
-
 .foreground-four img {
     margin: 0 30%;
 }
 /*end*/
 
+/*nav dropdown toggle*/
 .show {display: inline-block;}

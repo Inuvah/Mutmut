@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <title>mutmut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div id="price-info">
+      <ul>
+        <li id="first-top"><p>Levering: 2-4 hverdage</p></li>
+        <li><p>Gratis levering fra kr.499,-</p></li>
+        <li><p>14 dages fortrydelsesret</p></li>
+      </ul>
+    </div>
+  
+      <nav>
+        <div>
+          <a href="#" class="nav-plakater nav-link" onclick="dropFunctionOne()">Plakater</a>
+          <div class="dropdown-one dropdown-link" id="dropdown">
+            <li><a href="#">Plakater</a></li>
+            <li><a href="#">Små Plakater</a></li>
+            <li><a href="#">Kort</a></li>
+            <li><a href="#">Julekort</a></li>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="nav-tekstil nav-link" onclick="dropFunctionTwo()">Tekstil</a>
+          <div class="dropdown-two dropdown-link" id="dropdown-two">
+            <li><a href="#">T-shirts</a></li>
+            <li><a href="#">Muleposer</a></li>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="nav-køkken nav-link" onclick="dropFunctionThree()">Køkken</a>
+          <div class="dropdown-three dropdown-link" id="dropdown-three">
+            <li><a href="#">Krus</a></li>
+            <li><a href="#">Magneter</a></li>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="nav-leg nav-link" onclick="dropFunctionFour()">Leg</a>
+          <div class="dropdown-four dropdown-link" id="dropdown-four">
+            <li><a href="#">Vendespil</a></li>
+            <li><a href="#">Malebog</a></li>
+          </div>
+        </div>
+        <div id="nav-icons">
+          <a href="#"><img src="../img/magnifying-glass-solid.svg" alt=""></a>
+          <a href="#"><img src="../img/cart-shopping-solid.svg" alt=""></a>
+        </div>
+      </nav>
+  
+      <div id="logo-link">
+        <h1><a href="../index.html">mutmut.dk</a></h1>
+      </div>
+  
+  </header>
+
+<body>
+    <subnav class="borderBot" style="width: 80%; margin-left: 10%;">
+        <a href="index.html">Forside</a> &lt <a href="#">Produkt Katalog</a> &lt <a href="#">Små Plakater</a> &lt <a href="#">SYNNEJYLLAND-BLÅ</a>
+    </subnav>
+
+    <section id="produktContainer">
+        <div class="container"> 
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="../img/plakater/kaffkaff.png" alt="kafe frame" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="../img/plakater/Hover/IMG_0087.png" alt="kafe" style="width:100%;">
+                </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!--Seperate from frontpage carousel-->
+          <style>
+            div.container {
+                width: 70%;
+            }
+            #produktContainer {
+                width: 70%;
+                margin-left: 13.5%;
+            }
+          </style>
+
+        <div class="produktDetails">
+            <h1 class="borderBot">Smaa Kach</h1>
+            <h2 class="borderBot">149.00 DKK</h2>
+            <p class="borderBot">Kaff den ultimative boost. Nyt plakatmotiv fra Mutmut. Hygge collection passer godt sammen. 30x40. Flere størrelser.</p>
+            <p id="model" class="borderBot">Model/Varenr.: 200 30x40</p>
+            <div class="order">
+                <div class="amount">
+                <form action="submit" class="amount-form">
+                    <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+                </div>
+                <div class="buy">
+                <form action="submit" class="buy-form">
+                    <input type="button" value="Køb" class="buy-input">
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <article id="produktText">
+        <div id="produktText-container">
+            <h2>SKØNNE PLAKATER PÅ SØNDERJYSK</h2>
+
+            <p>Mutmut hylder den sønderjyske dialekt med humoristiske plakater, der sætter de herlige og sjove sønderjyske ord, talemåder og udtryk ind i et farverigt grafisk design-univers. Formålet er at få dialekten til at leve på nye måder og sprede kærligheden til vores dialekt og så selvfølgelig Sønderjylland.</p>
+
+            <br>
+
+            <h2>GIV DIN BOLIG ET SØNDERJYSK PIFT</h2>
+
+            <p>Få kærligheden ind i stuen, gangen, sove- eller børneværelset. Plakaterne pifter din boligindretning op, og du kan være sikker på, at dine gæster spørger til plakaterne. De kan slet ikke lade være, og så har du bare at give den gas å synnejysk. Det kan kun blive en fest.</p>
+
+            <br>
+
+            <p>Plakaten fås i 30 x 40  og 50 x 70 cm og sælges uden ramme på webshoppen. </p>
+
+            <br>
+
+            <h2>KORT FRA SØNDERJYLLAND</h2><br>
+
+            <p>Mange af de skønne sønderjyske motiver på plakaterne findes også som kort. Kortene er også lige til at sætte i glas og ramme og hænge op på væggen. De er også helt perfekte til en sønderjysk hilsen. </p>
+        </div>
+    </article>
+
+<section id="produkter2">
+    <div class="grid-produkter2">
+        <div class="produkt">
+            <div class="img-card img-bright">
+              <img src="../img/plakater/Småkager.png" alt="4. maj">
+              <img src="../img/plakater/Hover/Smakage_plakat.png" alt="hover" class="img-top">
+            </div>
+            <div class="produkt-text">
+              <h2>KAFF KAFF</h2>
+              <p>198</p>
+              <p>Kaff den ultimative boost. Nyt plakatmotiv fra Mutmut. Hygge collection passer godt sammen. 30x40</p>
+            </div>
+            <p>149,00 DKK</p>
+            <div class="order">
+                <div class="amount">
+                  <form action="submit" class="amount-form">
+                    <input type="text" name="amount" value="1" class="amount-input">
+                  </form>
+                </div>
+                <div class="buy">
+                  <form action="submit" class="buy-form">
+                    <input type="button" value="Køb" class="buy-input">
+                  </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="produkt">
+            <div class="img-card img-bright">
+              <img src="../img/plakater/kach.png" alt="4. maj">
+              <img src="../img/plakater/Hover/kach.png" alt="hover" class="img-top">
+            </div>
+            
+            <div class="produkt-text">
+              <h2>Kach - Mmmm</h2>
+              <p>169</p>
+              <p>En lækker kach til dem med en sød tand. Hygge collection passer godt sammen. 50 x 70 cm.</p>
+            </div>
+            <p>149,00 DKK</p>
+            <div class="order">
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
+        </div>
+
+        <div class="produkt">
+          <div class="img-card img-bright">
+            <img src="../img/plakater/Småkager.png" alt="Kommer og går">
+            <img src="../img/plakater/Hover/Smakage_plakat.png" alt="hover" class="img-top">
+          </div>
+            
+            <div class="produkt-text">
+              <h2>Små Kach</h2>
+              <p>160</p>
+              <p>Simpelt motiv med små danske kager. Hygge collection passer godt sammen. 30 x 40 cm</p>
+            </div>
+            <p>99,00 DKK</p>
+            <div class="order">
+              <div class="amount">
+                <form action="submit" class="amount-form">
+                  <input type="text" name="amount" value="1" class="amount-input">
+                </form>
+              </div>
+              <div class="buy">
+                <form action="submit" class="buy-form">
+                  <input type="button" value="Køb" class="buy-input">
+                </form>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    <div id="footer-content">
+    <div id="footer-info">
+      <ul>
+        <li>
+          <a href="#"><h3>mutmut.dk</h3></a>
+        </li>
+        <li><p>
+          Nørrevang 26
+        </p></li>
+        <li><p>
+          6200 Aabenraa
+        </p></li>
+        <li><p>
+          Danmark
+        </p></li>
+        <li><p>
+          <a href="tel:+4523826664">Telefonnr.: 23826664</a>
+        </p></li>
+        <li><p>
+          <a href="mailto:kontakt@mutmut.dk">E-mail: kontakt@mutmut.dk</a>
+        </p></li>
+        <li><p>
+          CVR-nummer: 37006599
+        </p></li>
+        <li><p>
+          <a href="https://mutmut.dk/sitemap/">Sitemap</a>
+        </p></li>
+      </ul>
+    </div>
+    <div id="footer-about">
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Om os</h3>
+          </a>
+        </li>
+        <li><a href="">
+          Cookie- og privatlivspolitik
+        </a></li>
+        <li><a href="">
+          Forhandlere
+        </a></li>
+        <li><a href="">
+          Handelsbetingelser
+        </a></li>
+        <li><a href="">
+          Kontakt
+        </a></li>
+        <li><a href="">
+          Om Mutmut
+        </a></li>
+      </ul>
+    </div>
+    <div id="footer-socials">
+      <ul>
+        <li>
+          <h3>Social media</h3>
+        </li>
+        <li>
+          <a href="#"><img src="../img/facebook.svg" alt="facebook"></a>
+          <a href="https://www.instagram.com/mutmutterne" target="_blank"><img src="../img/instagram.svg" alt="instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="footer-newsLetter">
+      <ul>
+       <li><h3>
+        Nyheds tilmelding
+       </h3></li>
+       <li>
+        <form type="submit" name="Navn">
+          <input type="text" value="Navn" class="forms"><br>
+          <input type="text" value="E-mail" class="forms"><br><br>
+          <input type="button" value="Godkend" class="godkend">
+        </form>
+       </li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+  <div id="logo-bottom">
+    <style>
+      #logo-bottom {
+        display: flex;
+        justify-content: center;
+        margin: 3% 0;
+      }
+    </style>
+    <a href="../index.html">
+      <img src="../img/Mutmut logo 102x102.png" alt="logo">
+    </a>
+  </div>
+</html>
